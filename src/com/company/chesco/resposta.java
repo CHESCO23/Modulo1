@@ -12,7 +12,7 @@ public class resposta {
         double subtotal = valorDoProduto * quantidadeDoProduto;
         Double Desconto = subtotal * 10.0 / 100;
         Double resultado = subtotal - Desconto;
-        Boolean quantidadeDeProdutoAcimaDe11 = (quantidadeDoProduto >= 11);
+        Boolean quantidadeDeProdutoAcimaDe11 = (quantidadeDoProduto > 10);
         if(quantidadeDeProdutoAcimaDe11)
             System.out.print("valor total é :  " + resultado );
 
