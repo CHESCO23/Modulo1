@@ -15,6 +15,18 @@ O método setTotal você pode, simplesmente, deixá-lo vazio, pois, não será m
 PS: O exercício é feito em dois passos para que você perceba a importância do encapsulamento.
  */
     public static void main(String[] args) {
+        Pedido pedido = new Pedido();
+
+        pedido.setCodigo(29102020);
+        pedido.setDesconto(20);
+        pedido.setSubtotal(172);
+
+
+        System.out.println("CÓDIGO DE RASTREAMENTO: " + pedido.getCodigo());
+        System.out.println("Desconto: " + pedido.getDesconto() + ("%"));
+        System.out.println("O subtotal é:" + ("R$") + pedido.getSubtotal());
+        System.out.println("Total:" + ("R$") + pedido.getTotal());
+
 
     }
 

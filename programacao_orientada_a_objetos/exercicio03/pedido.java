@@ -1,43 +1,40 @@
 package programacao_orientada_a_objetos.exercicio03;
 
-public class pedido {
-    Integer código;
+public class Pedido {
 
-    Double subtotal;
+    Integer codigo;
 
-    Double desconto;
+    int subtotal;
 
-    public Integer getCódigo() {
-        return código;
+    int desconto;
+
+    public Integer getCodigo() {
+        return codigo;
     }
 
-    public void setCódigo(Integer código) {
-        this.código = código;
+    public void setCodigo(Integer código) {
+        this.codigo = código;
     }
 
-    public Double getSubtotal() {
+    public int getSubtotal() {
         return subtotal;
     }
 
-    public void setSubtotal(Double subtotal) {
+    public void setSubtotal(int subtotal) {
         this.subtotal = subtotal;
     }
 
-    public Double getDesconto() {
+    public int getDesconto() {
         return desconto;
     }
 
-    public void setDesconto(Double desconto) {
+    public void setDesconto(int desconto) {
         this.desconto = desconto;
     }
 
-    public Double getTotal() {
-        return total;
+    public int getTotal() {
+        return subtotal - desconto;
     }
 
-    public void setTotal(Double total) {
-        this.total = total;
-    }
 
-    Double total;
 }
