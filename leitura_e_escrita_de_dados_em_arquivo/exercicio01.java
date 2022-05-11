@@ -25,7 +25,7 @@ Para receber cada tarefa do usuário, use o laço while. Enquanto o usuário nã
             linhas.add(nome);
         }
 
-        Path arquivo02 = Paths.get("C:\\Users\\aluno.LABCETEC\\Desktop\\arquivo02.txt");
+        Path arquivo02 = Paths.get("C:\\Users\\aluno.LABCETEC\\Desktop\\chesco23.txt");
 
         Files.write(arquivo02,linhas);
 
