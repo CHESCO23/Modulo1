@@ -1,4 +1,4 @@
-package orientacao_a_objetos_2_objeto_this;
+package orientacao_a_objetos_2_objeto_this.exercicio01;
 
 public class exercicio01 {
     /*
@@ -49,9 +49,14 @@ Bom trabalho! :)
         conta1.setDataVencimento("10/05/2012");
         conta1.setFornecedor(imobiliaria);
         ContaPagar conta2 = new ContaPagar("Compras do mês", 390d, "19/05/2012", mercado);
-        ContaPagar conta3 = new ContaPagar("Compras do mês", 390d, "19/05/2012", mercado);
+        ContaPagar conta3 = new ContaPagar("Aluguel da filial", 700d, "11/05/2012", mercado);
+        // pagamento de conta pendente (ok, deve funcionar)
         conta1.pagar();
+        // tentativa de pagar uma conta cancelada (não deve aceitar pagamento)
+        conta2.cancelar();
         conta2.pagar();
+        // tentativa de pagar uma conta duas vezes (não deve aceitar na segunda vez)
+        conta3.pagar();
         conta3.pagar();
     }
 }
