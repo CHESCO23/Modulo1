@@ -2,11 +2,7 @@ package orientacao_a_objetos_2_objeto_this.exercicio02;
 
 public class  ContaPagar extends Conta {
 
-    String Descricao;
-    Double valor;
-    String DataVencimento;
-    Fornecedor fornecedor;
-    SituacaoConta situacaoConta;
+
 
     public ContaPagar() {
         this.situacaoConta = SituacaoConta.PENDENTE;

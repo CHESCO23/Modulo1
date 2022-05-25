@@ -4,6 +4,9 @@ public class Conta {
     String Descricao;
     Double valor;
     String DataVencimento;
+    Fornecedor fornecedor;
+    SituacaoConta situacaoConta;
+
 
 
 
