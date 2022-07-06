@@ -23,16 +23,16 @@ public class  ContaPagar {
 
     }
 
-    void pagar() {
+    public void pagar() {
         //  equals é para fazer a comparação.
         if (SituacaoConta.PAGA.equals(this.getSituacaoConta())) {
             situacaoConta = SituacaoConta.PAGA;
-            System.out.println("A conta já foi paga" + this.getDescricao() + ".");
+            System.out.println("A conta já foi paga e não pode ser paga novamente: " + this.getDescricao() + ".");
         } else if (SituacaoConta.CANCELADA.equals(this.getSituacaoConta())) {
             situacaoConta = SituacaoConta.CANCELADA;
-            System.out.println("A conta já foi cancelada e não pode ser paga" + this.getDescricao() + ".");
+            System.out.println("A conta já foi cancelada e não pode ser paga " + this.getDescricao() + ".");
         } else {
-            System.out.println("pagando conta" + this.getDescricao() + " no valor de " + this.getValor() + "e vencimento em " + this.getDataVencimento() + " do fornecedor" + this.getFornecedor().getNome() + ".");
+            System.out.println("pagando conta " + this.getDescricao() + " no valor de " + this.getValor() + " e vencimento em " + this.getDataVencimento() + " do fornecedor" + this.getFornecedor().getNome() + ".");
             this.situacaoConta = SituacaoConta.PAGA;
         }
     }
@@ -79,10 +79,10 @@ public class  ContaPagar {
         if (SituacaoConta.CANCELADA.equals(this.getSituacaoConta())) {
             System.out.println("A conta já foi cancelada e não pode ser cancelada" + this.getDescricao() + ".");
         } else if (SituacaoConta.PAGA.equals(this.getSituacaoConta())) {
-            System.out.println("A conta já foi paga e não pode ser cancelada.");
+            System.out.println("Não pode pagar uma conta que já está paga: " + this.getDescricao() + ".");
 
         } else {
-            System.out.println("CONTA PENDENTE.");
+            System.out.println("cancelando conta " + this.getDescricao() + ".");
             this.situacaoConta = SituacaoConta.CANCELADA;
 
 
